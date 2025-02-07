@@ -1,16 +1,18 @@
 /* Place CSS styles here */
+
 body {
     background-color: rgb(35, 35, 35);
     font-family: "Montserrat", sans-serif;
     color: white;
 }
 
-main {
-    
-}
+
+
+/*HEADER & NAV*/
 
 header {
     background-color: black;
+    box-shadow: 0px 0px 20px 2px #798bff8f;
     padding: 20px 40px;
     display: flex;
     align-items: center;
@@ -37,8 +39,60 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
+
+/*MAIN & GENERAL*/
+
+.main-format {
+    padding: 5% 20%;
+    background-color: rgb(20, 20, 20);
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1em;
+    font-family: "IBM Plex Mono", serif;
+    margin: 0 0 20px 0;
+}
+
+h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: "IBM Plex Mono", serif;
+    font-size: 1.6em;
+    margin-top: 0;
+}
+
+main p {
+    font-size: 12px;
+}
+
+main ul {
+    font-size: 12px;
+}
+
+
+
+/*HERO*/
+
 .hero {
     color: white;
+}
+
+.hero-flex {
+    display:flex
 }
 
 .hero-img {
@@ -59,37 +113,16 @@ nav a:hover {
 
 }
 
-.main-format {
-    padding: 5% 20%;
-    background-color: rgb(20, 20, 20);
-    line-height: 1.6;
+.ernestfowler-img {
+    width: 30%;
+    height: fit-content;
+    margin-left: 80px;
+    border-radius: 25px;
 }
 
-h2 {
-    font-size: 1em;
-}
 
-h2 a {
-    text-decoration: none;
-    color: white;
-}
 
-h2 a:hover {
-    text-decoration: underline;
-}
-
-h3 {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-main p {
-    font-size: 12px;
-}
-
-main ul {
-    font-size: 12px;
-}
+/*PROJECT BOX*/
 
 .movie-booking-image {
     background-image: url(../img/Movie_Booking_Thumbnail.png);
@@ -111,12 +144,57 @@ main ul {
 
 .project {
     display: flex;
-    box-shadow: 0px 0px 8px 2px #ffffff17;
+    box-shadow: 0px 0px 20px 2px #798bff8f;
     border-radius: 25px;
     overflow: hidden;
     margin-bottom: 60px;
 }
 
 .project-description {
-    padding:3%;
+    padding: 32px;
+}
+
+
+
+
+/*CONTACT BOX*/
+
+.contact-box {
+    padding: 32px;
+    box-shadow: 0px 0px 20px 2px #798bff8f;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+}
+
+.contact-box h2 {
+    width: 50%;
+    margin: 0;
+}
+
+.contact-divider {
+    width: 1px;
+    height: auto;
+    border-left: 1px solid #aab5fb8f;
+    position: center;
+    margin: 0;
+}
+
+.contact-li {
+    line-height: 0.8;
+    margin: 0;
+    padding: 0 40px;
+}
+
+.contact-li ol {
+    margin: 0;
+}
+
+.contact-li a {
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+}
+
+.contact-li a:hover {
+    text-decoration: underline;
 }
